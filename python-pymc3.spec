@@ -6,7 +6,7 @@
 Name:           python-%{modname}
 Version:        3.0
 Release:        0.1.git%{shortcommit}%{?dist}
-Summary:        Easy to use wrappers generator for C libraries based on ctypes
+Summary:        Bayesian statistical modeling and model fitting
 
 License:        ASL 2.0
 URL:            https://github.com/pymc-devs/pymc3
@@ -15,7 +15,9 @@ Source0:        https://github.com/pymc-devs/pymc3/archive/%{commit}/%{modname}-
 BuildArch:      noarch
 
 %description
-%{summary}.
+PyMC3 is a python module for Bayesian statistical modeling and model fitting
+which focuses on advanced Markov chain Monte Carlo fitting algorithms. Its
+flexibility and extensibility make it applicable to a large suite of problems.
 
 %package -n python2-%{modname}
 Summary:        %{summary}
@@ -34,14 +36,16 @@ Requires:       numpy scipy
 Requires:       python-pandas
 %endif
 BuildRequires:  python-matplotlib
-BuildRequires:  python2-theano
+BuildRequires:  python-theano
 BuildRequires:  python-enum34
 Requires:       python-matplotlib
-Requires:       python2-theano
+Requires:       python-theano
 Requires:       python-enum34
 
 %description -n python2-%{modname}
-%{summary}.
+PyMC3 is a python module for Bayesian statistical modeling and model fitting
+which focuses on advanced Markov chain Monte Carlo fitting algorithms. Its
+flexibility and extensibility make it applicable to a large suite of problems.
 
 Python 2 version.
 
@@ -60,7 +64,9 @@ Requires:       python3-matplotlib
 Requires:       python3-theano
 
 %description -n python3-%{modname}
-%{summary}.
+PyMC3 is a python module for Bayesian statistical modeling and model fitting
+which focuses on advanced Markov chain Monte Carlo fitting algorithms. Its
+flexibility and extensibility make it applicable to a large suite of problems.
 
 Python 3 version.
 
