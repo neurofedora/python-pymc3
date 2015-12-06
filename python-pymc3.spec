@@ -38,9 +38,11 @@ Requires:       python-pandas
 BuildRequires:  python-matplotlib
 BuildRequires:  python-theano
 BuildRequires:  python-enum34
+BuildRequires:  python2-patsy
 Requires:       python-matplotlib
 Requires:       python-theano
 Requires:       python-enum34
+Requires:       python2-patsy
 
 %description -n python2-%{modname}
 PyMC3 is a python module for Bayesian statistical modeling and model fitting
@@ -58,10 +60,12 @@ BuildRequires:  python3-numpy python3-scipy
 BuildRequires:  python3-pandas
 BuildRequires:  python3-matplotlib
 BuildRequires:  python3-theano
+BuildRequires:  python3-patsy
 Requires:       python3-numpy python3-scipy
 Requires:       python3-pandas
 Requires:       python3-matplotlib
 Requires:       python3-theano
+Requires:       python3-patsy
 
 %description -n python3-%{modname}
 PyMC3 is a python module for Bayesian statistical modeling and model fitting
